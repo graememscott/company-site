@@ -108,6 +108,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: helvetica, sans-serif;
 }
 ol,
 ul {
@@ -127,4 +128,55 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: white;
+  text-transform: uppercase;
+  background: linear-gradient(225deg, transparent 5px, white 0);
+  cursor: pointer;
+  color: #707070;
+}
+
+nav {
+  display: flex;
+  height: 70px;
+  background-color: #222f45;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  margin: 0 auto 0 200px;
+  height: 51px;
+  img {
+    height: 100%;
+  }
+}
+
+.nav-links-cont {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  :nth-last-child(2) {
+    margin-right: 30px;
+  }
+}
+
+.nav-links {
+  margin: 0 32px 0 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-call {
+  margin-right: 200px;
+  button {
+    padding: 9px 32px;
+    font-size: 20px;
+  }
 }
