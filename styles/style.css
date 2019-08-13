@@ -1,12 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
 html,
 body,
 div,
@@ -108,11 +99,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-  font-family: helvetica, sans-serif;
-}
-
 ol,
 ul {
   list-style: none;
@@ -136,13 +122,18 @@ table {
   border-spacing: 0;
 }
 
-button {
-  outline: none;
-  border: none;
-  background: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: #707070;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  line-height: 1;
+  font-family: helvetica, sans-serif;
 }
 
 nav {
@@ -193,63 +184,25 @@ nav {
   margin-right: 200px;
 }
 
+button {
+  outline: none;
+  border: none;
+  background: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #707070;
+}
+
 .nav-call button {
   padding: 9px 32px;
   font-size: 20px;
   background: linear-gradient(225deg, transparent 5px, white 0);
 }
 
-.top-cont {
-  position: relative;
-}
-
-.gradient-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to top, #233046 360px, transparent);
-  z-index: 1;
-}
-
-.image-and-call-cont {
-  margin-top: 70px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 650px;
-}
-
-.call-cont {
-  width: 50%;
-  background-color: #4a3b8b;
-}
-
-.call-cont-inner {
-  width: 518px;
-  margin: 135px 0 0 200px;
-  position: relative;
-  z-index: 2;
-}
-
-.call-cont-inner h1 {
-  font-size: 64px;
-  color: white;
-  font-weight: 300;
-  line-height: 80px;
-  margin-bottom: 15px;
-}
-
 .call-cont-inner button {
   font-size: 26px;
   padding: 12px 50px;
   background: linear-gradient(215deg, transparent 15px, white 0);
-}
-
-.img-cont {
-  width: 50%;
-  background-image: url(images/computer-background.jpg);
-  background-size: cover;
 }
 
 .icon-row {
@@ -300,5 +253,52 @@ nav {
 
 .icon-single p {
   font-size: 20px;
+}
+
+.image-and-call-cont {
+  margin-top: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 650px;
+}
+
+.call-cont {
+  width: 50%;
+  background-color: #4a3b8b;
+}
+
+.call-cont-inner {
+  width: 518px;
+  margin: 135px 0 0 200px;
+  position: relative;
+  z-index: 2;
+}
+
+.call-cont-inner h1 {
+  font-size: 64px;
+  color: white;
+  font-weight: 300;
+  line-height: 80px;
+  margin-bottom: 15px;
+}
+
+.img-cont {
+  width: 50%;
+  background-image: url(images/computer-background.jpg);
+  background-size: cover;
+}
+
+.top-cont {
+  position: relative;
+}
+
+.gradient-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #233046 360px, transparent);
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

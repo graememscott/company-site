@@ -1,0 +1,11 @@
+.top-cont {
+  position: relative;
+}
+
+.gradient-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #233046 360px, transparent);
+  z-index: 1;
+}

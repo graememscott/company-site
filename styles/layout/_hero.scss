@@ -1,0 +1,31 @@
+.image-and-call-cont {
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  height: 650px;
+}
+
+.call-cont {
+  width: 50%;
+  background-color: #4a3b8b;
+}
+
+.call-cont-inner {
+  width: 518px;
+  margin: 135px 0 0 200px;
+  position: relative;
+  z-index: 2;
+  h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: 300;
+    line-height: 80px;
+    margin-bottom: 15px;
+  }
+}
+
+.img-cont {
+  width: 50%;
+  background-image: url(images/computer-background.jpg);
+  background-size: cover;
+}
