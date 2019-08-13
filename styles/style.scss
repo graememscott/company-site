@@ -3,10 +3,11 @@
 @import "./base/root";
 
 // COMPONENTS
-@import "./components/nav";
 @import "./components/button";
-@import "./components/iconSection";
+@import "./components/card";
 
 // LAYOUT
+@import "./layout/header";
 @import "./layout/hero";
+@import "./layout/content";
 @import "./layout/section";
