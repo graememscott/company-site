@@ -8,61 +8,98 @@
     <title>Company Site</title>
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW" />
   </head>
+
   <body>
-    <nav>
-      <a class="logo" href="#">
-        <img src="images/keys.png" alt="keyboard" />
+    <header class="header">
+      <a class="header--logo" href="#">
+        <img class="header--image" src="images/keys.png" alt="keyboard" />
       </a>
-      <ul class="nav-links-cont">
-        <a class="nav-links" href="#">
-          <li>Link</li>
+
+      <nav class="header--nav">
+        <a class="header--link" href="#">
+          Link
         </a>
-        <a class="nav-links" href="#">
-          <li>Link</li>
+
+        <a class="header--link" href="#">
+          Link
         </a>
-        <a class="nav-links" href="#">
-          <li>Link</li>
+
+        <a class="header--link" href="#">
+          Link
         </a>
-        <a class="nav-links" href="#">
-          <li>Link</li>
+
+        <a class="header--link" href="#">
+          Link
         </a>
-        <a class="nav-call" href="#">
-          <button>Button</button>
+
+        <a class="button--small header--button">
+          Button
         </a>
-      </ul>
-    </nav>
-    <div class="top-cont">
+      </nav>
+    </header>
+
+    <div class="main">
       <div class="gradient-overlay"></div>
-      <div class="image-and-call-cont">
-        <div class="call-cont">
-          <div class="call-cont-inner">
-            <h1>Web development at its finest</h1>
-            <a href="#">
-              <button>Button</button>
-            </a>
+
+      <div class="hero">
+        <div class="hero--cta">
+          <div class="hero--content">
+            <h1 class="hero--heading">
+              Web development at its finest
+            </h1>
+
+            <button class="button">
+              Button
+            </button>
           </div>
         </div>
-        <div class="img-cont"></div>
+
+        <div class="hero--image"></div>
       </div>
-      <div class="icon-row">
-        <div class="icon-cont">
-          <div class="icon-single">
-            <img src="images/keys.png" alt="keyboard" />
-            <h2>Heading</h2>
-            <p>This is a small paragraph, nothing too fancy</p>
+
+      <section class="section">
+        <div class="cards">
+          <div class="card">
+            <img class="card--image" src="images/keys.png" alt="keyboard" />
+
+            <h2 class="card--heading">
+              Heading
+            </h2>
+
+            <p class="card--content">
+              This is a small paragraph, nothing too fancy
+            </p>
           </div>
-          <div class="icon-single">
-            <img src="images/mixer.png" alt="mixer" />
-            <h2>Heading</h2>
-            <p>This is a small paragraph, nothing too fancy</p>
+
+          <div class="card">
+            <img class="card--image" src="images/mixer.png" alt="mixer" />
+
+            <h2 class="card--heading">
+              Heading
+            </h2>
+
+            <p class="card--content">
+              This is a small paragraph, nothing too fancy
+            </p>
           </div>
-          <div class="icon-single">
-            <img src="images/midi-controller.png" alt="midi controller" />
-            <h2>Heading</h2>
-            <p>This is a small paragraph, nothing too fancy</p>
+
+          <div class="card">
+            <img
+              class="card--image"
+              src="images/midi-controller.png"
+              alt="midi controller"
+            />
+
+            <h2 class="card--heading">
+              Heading
+            </h2>
+
+            <p class="card--content">
+              This is a small paragraph, nothing too fancy
+            </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>

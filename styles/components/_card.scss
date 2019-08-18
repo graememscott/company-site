@@ -1,0 +1,33 @@
+.cards {
+  height: 100%;
+  width: 973px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  width: 271px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.card--image {
+  margin: 0 auto 28px;
+}
+
+.card--heading {
+  font-size: 32px;
+  margin-bottom: 9px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card--content {
+  font-size: 20px;
+}
