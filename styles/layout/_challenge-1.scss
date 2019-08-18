@@ -16,6 +16,7 @@
   outline: none;
   background: rgb(255, 234, 227);
   width: 100%;
+  height: 2rem;
   border-radius: 1rem;
 }
 
@@ -25,24 +26,27 @@
 
 .range-slider::-webkit-slider-thumb {
   appearance: none;
-  width: 3rem;
-  height: 3rem;
-  background: rgb(179, 53, 7);
+  width: 15rem;
+  height: 10rem;
+  background: url("https://fanart.tv/fanart/tv/73615/hdtvlogo/corner-gas-581e4d71a95f4.png");
+  background-size: cover;
+  background-position: center center;
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .range-slider::-moz-range-thumb {
   appearance: none;
-  outline: none;
-  width: 3rem;
-  height: 3rem;
-  background: rgb(179, 53, 7);
+  width: 15rem;
+  height: 10rem;
+  background: url("https://fanart.tv/fanart/tv/73615/hdtvlogo/corner-gas-581e4d71a95f4.png");
+  background-size: cover;
+  background-position: center center;
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .range-slider-output {
   font-size: 5rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
