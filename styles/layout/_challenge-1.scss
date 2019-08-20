@@ -4,14 +4,14 @@
   background-image: linear-gradient(to top right, coral, rgb(255, 193, 170));
 }
 
-.challenge-one--slider {
+.range-slider--content {
   padding: 10rem 2rem;
   text-align: center;
   max-width: 100rem;
   width: 100%;
 }
 
-.range-slider {
+.range-slider--input {
   appearance: none;
   outline: none;
   background: rgb(255, 234, 227);
@@ -20,11 +20,11 @@
   border-radius: 1rem;
 }
 
-.range-slider::-moz-focus-inner {
+.range-slider--input::-moz-focus-inner {
   border: 0;
 }
 
-.range-slider::-webkit-slider-thumb {
+.range-slider--input::-webkit-slider-thumb {
   appearance: none;
   width: 15rem;
   height: 10rem;
@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-.range-slider::-moz-range-thumb {
+.range-slider--input::-moz-range-thumb {
   appearance: none;
   width: 15rem;
   height: 10rem;
@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-.range-slider-output {
+.range-slider--value {
   font-size: 5rem;
   padding-top: 5rem;
 }
