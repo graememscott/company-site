@@ -1,0 +1,84 @@
+.challenge-two {
+  display: flex;
+  justify-content: center;
+  background-image: url(images/check.svg);
+  background-size: cover;
+}
+
+.todo--container {
+  width: 800px;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.todo--input {
+  flex: 0 0 75%;
+  padding: 2rem 2rem;
+  border: none;
+  font-size: 3rem;
+  border-radius: 10px;
+  background-color: rgba(178, 34, 34, 0.274);
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(0,0,0,.5);
+  font-size: 3rem;
+}
+
+.todo--submit {
+  flex: 1;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgba(46, 139, 86, 0.151);
+  border-radius: 10px;
+  transition: background-color .3s;
+  font-size: 3rem;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(46, 139, 86, 0.6);
+  }
+}
+
+.todo--list {
+  flex: 0 0 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  li {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: '';
+      position: absolute;
+      cursor: pointer;
+      left: -2rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: rgba(0,0,0,.2);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.todo--list--checked {
+  &:after {
+    content: '';
+    background: url(../images/check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -2rem;
+  }
+}
