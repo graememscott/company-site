@@ -1,15 +1,22 @@
+// Range slider
+
+
+
 let sliderOutput = document.querySelector('.range-slider--value');
 
 document.querySelector('.range-slider--input').addEventListener('input', function(event) {
   sliderOutput.innerHTML = event.currentTarget.value;
 });
 
+
+
+// To-do List
+
+
 var todoInput = document.querySelector('.todo--input');
 var todoSubmit = document.querySelector('.todo--submit');
 var todoList = document.querySelector('.todo--list');
 var todoCheck = document.querySelector('.todo--list li');
-
-console.log(todoCheck);
 
 function createToDo() {
   if (todoInput.value === "") {
@@ -37,3 +44,21 @@ todoInput.addEventListener("keypress", function (event) {
     createToDo();
   }
 })
+
+
+
+// Search
+
+
+
+var searchItems = document.querySelectorAll('.search--item');
+
+document.querySelector('.search--input').addEventListener('input', function (event) {
+  for (var i = 0; i < searchItems.length; i++) {
+    if (searchItems[i].innerHTML.includes(event.currentTarget.value)) {
+      searchItems[i].style.display = 'list-item';
+    } else {
+      searchItems[i].style.display = 'none';
+    }
+  }
+});
