@@ -52,13 +52,33 @@ todoInput.addEventListener("keypress", function (event) {
 
 
 var searchItems = document.querySelectorAll('.search--item');
+var searchBtn = document.querySelector('.search--btn');
+var searchNoResultsTxt = document.querySelector('.search--no-results');
 
-document.querySelector('.search--input').addEventListener('input', function (event) {
+
+// document.querySelector('.search--input').addEventListener('input', function (event) {
+//   for (var i = 0; i < searchItems.length; i++) {
+//     if (searchItems[i].innerHTML.includes(event.currentTarget.value)) {
+//       searchItems[i].style.display = 'list-item';
+//     } else {
+//       searchItems[i].style.display = 'none';
+//     }
+//   }
+// });
+
+searchBtn.addEventListener('click', function () {
   for (var i = 0; i < searchItems.length; i++) {
-    if (searchItems[i].innerHTML.includes(event.currentTarget.value)) {
+    var noResultsChecker = true;
+    if (searchItems[i].innerHTML.includes(document.querySelector('.search--input').value)) {
       searchItems[i].style.display = 'list-item';
+      noResultsChecker = true;
     } else {
       searchItems[i].style.display = 'none';
+      noResultsChecker = false;
+    }
+    console.log(noResultsChecker);
+    if (noResultsChecker = false) {
+      searchNoResultsTxt.classList.add('search--no-results-active');
     }
   }
-});
+})
